@@ -1,5 +1,5 @@
 import GalleryAddForm from "./GalleryAddForm";
-export const dynamic = "force-dynamic";
+
 import GalleryActions from "./GalleryActions";
 import { requireAdmin } from "../../lib/auth";
 import { neon } from "@neondatabase/serverless";
