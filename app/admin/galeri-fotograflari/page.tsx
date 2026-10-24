@@ -1,3 +1,4 @@
+import { connection } from "next/server";
 import GalleryAddForm from "./GalleryAddForm";
 
 import GalleryActions from "./GalleryActions";
