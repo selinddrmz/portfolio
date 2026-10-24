@@ -98,12 +98,20 @@ export async function POST(request: Request) {
       );
     }
 
+    const blobToken = process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB2_READ_WRITE_TOKEN;
+    if (!blobToken) {
+      return NextResponse.json(
+        { error: "Blob yükleme anahtarı yapılandırılmamış." },
+        { status: 500 }
+      );
+    }
+
     const blob = await put(file.name, file, {
-        access: "public",
-        addRandomSuffix: true,
-        contentType: file.type,
-        token: process.env.BLOB2_READ_WRITE_TOKEN,
-      });
+      access: "public",
+      addRandomSuffix: true,
+      contentType: file.type,
+      token: blobToken,
+    });
 
     const result = await sql`
       INSERT INTO galeri_fotograflari
