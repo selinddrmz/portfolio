@@ -377,7 +377,7 @@ export default function Home() {
             <div className="project-meta"><span>{t.project3Type}</span><span>03 / 03</span></div>
             <h3>{t.project3Title}</h3><p>{t.project3Text}</p>
             <div className="tag-list">{["Next.js", "TypeScript", "Recharts", "Open Data", "Forecasting"].map(x => <span key={x}>{x}</span>)}</div>
-            <div className="project-bottom"><span className="project-status"><i /> LIVE PRODUCT</span><span><a href="https://istanbul-su-durumu-ivbw.vercel.app" target="_blank" rel="noreferrer">Canlı ürünü aç ↗</a> · <a href="https://github.com/selinddrmz/istanbul-su-durumu" target="_blank" rel="noreferrer">GitHub ↗</a></span></div>
+            <div className="project-bottom"><span className="project-status"><i /> LIVE PRODUCT</span><span><a href="/projects/istanbul-su-durumu">Vaka çalışması ↗</a> · <a href="https://istanbul-su-durumu-ivbw.vercel.app" target="_blank" rel="noreferrer">Canlı ürün ↗</a> · <a href="https://github.com/selinddrmz/istanbul-su-durumu" target="_blank" rel="noreferrer">GitHub ↗</a></span></div>
           </div>
         </article>
         <p className="note">{t.projectNote}</p>
