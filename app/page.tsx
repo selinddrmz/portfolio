@@ -65,6 +65,9 @@ const content = {
     project2Type: "TALEP TAHMİNİ",
     project2Title: "Toplu taşımada talep tahmini",
     project2Text: "Manisa'daki 21 numaralı otobüs hattının yolcu talebini incelemeye ve sefer planlamasını destekleyecek tahmin yöntemlerini değerlendirmeye yönelik proje çalışması.",
+    project3Type: "CANLI VERİ ÜRÜNÜ",
+    project3Title: "İstanbul Su Durumu",
+    project3Text: "İBB tarihsel baraj doluluk kayıtları ve ayrı bir canlı veri kaynağıyla İstanbul barajlarını izleyen; mevsimsel örüntü, 12 aylık basit tahmin, belirsizlik bandı ve aynı gün geçmiş karşılaştırması sunan etkileşimli veri ürünü.",
     projectLink: "GitHub profilimi ziyaret et ↗",
     projectNote: "Grafiklerdeki değerler tasarım amacıyla oluşturulmuş örneklerdir; gerçek proje sonuçlarını göstermez.",
     educationLabel: "04 / EĞİTİM VE GELİŞİM",
@@ -139,6 +142,9 @@ const content = {
     project2Type: "DEMAND FORECASTING",
     project2Title: "Public transport demand forecasting",
     project2Text: "A project exploring passenger demand on Manisa bus route 21 and evaluating forecasting approaches that could support service planning.",
+    project3Type: "LIVE DATA PRODUCT",
+    project3Title: "Istanbul Water Status",
+    project3Text: "An interactive data product combining historical IBB reservoir records with a separate live source, seasonal patterns, a simple 12-month forecast with an uncertainty band, and same-calendar-day historical comparison.",
     projectLink: "Visit my GitHub profile ↗",
     projectNote: "Chart values are illustrative examples for design purposes and do not represent actual project results.",
     educationLabel: "04 / EDUCATION & DEVELOPMENT",
@@ -358,6 +364,20 @@ export default function Home() {
             <h3>{t.project2Title}</h3><p>{t.project2Text}</p>
             <div className="tag-list">{["Python", "Pandas", "NumPy", "Time Series", "Forecasting"].map(x => <span key={x}>{x}</span>)}</div>
             <div className="project-bottom"><span className="project-status"><i /> PYTHON · DATA ANALYSIS</span><a href={GITHUB} target="_blank" rel="noreferrer">{t.projectLink}</a></div>
+          </div>
+        </article>
+        <article className="project-card">
+          <div className="project-visual">
+            <div className="project-visual-top"><span>PROJECT / 003</span><span>LIVE DATA · FORECAST</span></div>
+            <div className="project-visual-title">ISTANBUL<br />WATER STATUS</div>
+            <div className="bar-chart">{[58,64,61,72,68,76,70,82,74,88,79,85].map((height, i) => <div className="bar-column" key={i}><span style={{ height: `${height}%` }} /><small>{i + 1}</small></div>)}</div>
+            <div className="visual-legend"><span><i className="mint" />Historical and seasonal analysis</span></div>
+          </div>
+          <div className="project-content">
+            <div className="project-meta"><span>{t.project3Type}</span><span>03 / 03</span></div>
+            <h3>{t.project3Title}</h3><p>{t.project3Text}</p>
+            <div className="tag-list">{["Next.js", "TypeScript", "Recharts", "Open Data", "Forecasting"].map(x => <span key={x}>{x}</span>)}</div>
+            <div className="project-bottom"><span className="project-status"><i /> LIVE PRODUCT</span><span><a href="https://istanbul-su-durumu-ivbw.vercel.app" target="_blank" rel="noreferrer">Canlı ürünü aç ↗</a> · <a href="https://github.com/selinddrmz/istanbul-su-durumu" target="_blank" rel="noreferrer">GitHub ↗</a></span></div>
           </div>
         </article>
         <p className="note">{t.projectNote}</p>
