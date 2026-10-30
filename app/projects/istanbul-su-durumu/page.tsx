@@ -90,6 +90,12 @@ export default function IstanbulWaterCaseStudy() {
           </section>
 
           <section>
+            <p className="text-xs font-bold tracking-widest text-emerald-800">ÖLÇÜM · LIGHTHOUSE ÖN KONTROLÜ</p>
+            <h2 className="mt-3 font-serif text-3xl font-bold">Performans iyileştirmesi gerekiyor</h2>
+            <p className="mt-4 leading-7 text-stone-700">30.10.2026 tarihinde paylaşılan Lighthouse ekran görüntüsünde Performans 58, Erişilebilirlik 100 olarak göründü. Aynı ölçümde LCP 4,2 sn ve Total Blocking Time 1.510 ms idi. Ödev hedefi Performans ≥ 80 ve Erişilebilirlik ≥ 90'dır. Ölçüm profilinin (mobil/masaüstü) ayrıca doğrulanması ve mobil Lighthouse testinin yeniden alınması gerekir; bu nedenle performans hedefi henüz karşılanmış kabul edilmez.</p>
+          </section>
+
+          <section>
             <p className="text-xs font-bold tracking-widest text-emerald-800">07 · KULLANICI TESTİ</p>
             <h2 className="mt-3 font-serif text-3xl font-bold">Test bulguları</h2>
             <p className="mt-4 leading-7 text-stone-700">Üç kişi canlı ürün bağlantısını farklı cihazlarda açarak erişim ön kontrolü yaptı. Bu deneme bağlantının mobil ve masaüstü tarayıcılarda açıldığını doğruladı; ancak üç görev için süre ve başarı ölçümü yapılmadı. Bu nedenle aşağıdaki görev bazlı kullanıcı testi henüz tamamlanmış sayılmıyor.</p>
