@@ -49,6 +49,19 @@ export default function IstanbulWaterCaseStudy() {
               <div className="rounded-xl border border-stone-300 bg-white p-4"><b>Next.js API route</b><p className="mt-2 text-sm text-stone-600">Canlı kaynak isteğini sunucu tarafında yönetir ve kaynağı yanıtla birlikte bildirir.</p></div>
               <div className="rounded-xl border border-stone-300 bg-white p-4"><b>Vercel + tarayıcı</b><p className="mt-2 text-sm text-stone-600">Uygulamayı yayınlar; grafikler ve filtreler istemci tarafında çalışır.</p></div>
             </div>
+            <div className="mt-6 rounded-2xl border border-stone-300 bg-white p-5">
+              <p className="text-xs font-bold tracking-widest text-emerald-800">VERİ AKIŞ ŞEMASI</p>
+              <div className="mt-4 grid gap-3 text-center text-sm font-semibold sm:grid-cols-2">
+                <div className="rounded-lg border border-sky-200 bg-sky-50 p-3">İBB tarihsel açık veri</div>
+                <div className="rounded-lg border border-teal-200 bg-teal-50 p-3">İSKİ API / kaynak atıflı yedek API</div>
+                <div className="hidden text-xl text-stone-500 sm:block">↓</div>
+                <div className="hidden text-xl text-stone-500 sm:block">↓</div>
+                <div className="rounded-lg border border-stone-300 bg-stone-50 p-3 sm:col-span-2">Next.js uygulaması ve /api/iski sunucu uç noktası</div>
+                <div className="text-xl text-stone-500 sm:col-span-2">↓</div>
+                <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 sm:col-span-2">Kullanıcı arayüzü · KPI · grafik · tahmin · filtrelenebilir tablo</div>
+              </div>
+              <p className="mt-3 text-xs leading-5 text-stone-500">Günlük GitHub Actions görevi başarılı canlı yanıtı public/iski-guncel.json dosyasına snapshot olarak yazar; canlı uç noktalar yanıt vermezse arayüz son başarılı snapshot'ı kullanır.</p>
+            </div>
             <p className="mt-4 text-sm leading-6 text-stone-600">Tarihsel dosya güncel ölçüm değildir. Canlı gösterge ayrı kaynaktan gelir; ölçüm tarihi ve kaynak atfı kartta gösterilir.</p>
           </section>
 
