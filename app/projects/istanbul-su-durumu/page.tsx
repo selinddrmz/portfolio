@@ -79,8 +79,9 @@ export default function IstanbulWaterCaseStudy() {
           <section>
             <p className="text-xs font-bold tracking-widest text-emerald-800">07 · KULLANICI TESTİ</p>
             <h2 className="mt-3 font-serif text-3xl font-bold">Test bulguları</h2>
-            <p className="mt-4 leading-7 text-stone-700">Ödev gereği en az iki katılımcıyla üç görevli test yapılmalıdır. Katılımcı sayısı, görev süreleri, başarı ve gözlenen sorunlar gerçek testten sonra raporlanacaktır; henüz ölçülmemiş sonuçlar burada başarı olarak sunulmamıştır.</p>
-            <p className="mt-3 text-sm text-stone-600">Görevler: belirli bir barajın eğilimini bulma; tahmin ve belirsizlik bandını açıklama; aynı gün geçmiş karşılaştırmasını bulma.</p>
+            <p className="mt-4 leading-7 text-stone-700">İlk katılımcıyla mobil cihazda üç görev tamamlandı. Katılımcı, en az %90 doluluk filtresini yaklaşık 1 saniyede uyguladı ve işlemi kolay buldu. Tahmin grafiğindeki belirsizlik bandını doğru açıkladı; aynı gün karşılaştırması bölümünü de buldu.</p>
+            <div className="mt-4 overflow-x-auto"><table className="w-full border-collapse text-left text-sm"><thead><tr className="border-b border-stone-300"><th className="py-2 pr-4">Görev</th><th className="py-2 pr-4">Sonuç</th><th className="py-2">Gözlem</th></tr></thead><tbody><tr className="border-b border-stone-200"><td className="py-2 pr-4">En az %90 doluluk filtresi</td><td className="py-2 pr-4">Başarılı</td><td className="py-2">Yaklaşık 1 saniye; kolay</td></tr><tr className="border-b border-stone-200"><td className="py-2 pr-4">Tahmin belirsizlik bandını açıklama</td><td className="py-2 pr-4">Başarılı</td><td className="py-2">Katılımcı doğru açıkladı</td></tr><tr><td className="py-2 pr-4">Aynı gün karşılaştırmasını bulma</td><td className="py-2 pr-4">Başarılı</td><td className="py-2">Bölümü buldu</td></tr></tbody></table></div>
+            <p className="mt-3 text-sm text-stone-600">Katılımcı 1: iPhone, mobil tarayıcı. Katılımcı 2 testi henüz yapılmadı; en az iki katılımcı şartını tamamlamak için ikinci test eklenmelidir. Test görevleri: doluluk filtresi, tahmin ve belirsizlik bandını açıklama, aynı gün geçmiş karşılaştırmasını bulma.</p>
           </section>
 
           <section>
